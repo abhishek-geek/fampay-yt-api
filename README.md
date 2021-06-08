@@ -57,7 +57,7 @@ videos : [
 Run this project using node, follow these guidelines:
 
 ```bash
-  git clone https://github.com/abhishek-geek/fampay-yt-api
+  git clone https://github.com/abhishek-geek/fampay-yt-api.git
   cd fampay-yt-api
   npm install
 ```
