@@ -22,7 +22,7 @@ const getNewVideos = async (after) => {
     // console.log("response from yt : ", response);
     const { data } = response;
     const details = data.items.map((item) => item.snippet);
-    // console.log("details : ", details);
+    console.log("details : ", details);
     return details;
   } catch (err) {
     console.error(err);

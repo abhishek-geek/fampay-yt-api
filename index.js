@@ -24,7 +24,7 @@ const loadNewVideosIn = async (time) => {
 
 // calling the function to fetch and store videos every 10 seconds
 
-// loadNewVideosIn(10);
+loadNewVideosIn(10);
 
 // calling the express app
 
