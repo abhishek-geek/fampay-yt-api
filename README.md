@@ -62,8 +62,6 @@ Run this project using node, follow these guidelines:
   npm install
 ```
 
-To run Development server
-
 ### Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
@@ -82,6 +80,9 @@ MONGODB_URI=mongodb+srv://<user>:<password>@fampay.ygx8k.mongodb.net/<database_n
 
 YOUTUBE_TOKEN="key_one, key_2, key_3"
 
+  
+To run Development server
+  
 ```bash
   npm run dev
 ```
