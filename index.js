@@ -17,8 +17,8 @@ const loadNewVideosIn = async (time) => {
     const responce = await axios.post("http://localhost:3003/api/videos/all", {
       videos,
     });
-    latestDate = responce.data.latestDate;
-    console.log(latestDate);
+    // latestDate = responce.data.latestDate;
+    // console.log(latestDate);
   }, time * 1000);
 };
 

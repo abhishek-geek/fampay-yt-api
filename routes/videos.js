@@ -3,7 +3,7 @@ const Video = require("../model/video");
 // require("express-async-errors");
 
 videosRouter.get("/", async (request, response) => {
-  console.log("Geting.....");
+  // console.log("Geting.....");
 
   // extracting query parameters of page no (page) and no of items (limit)
   const page = Number(request.query.page);
@@ -19,7 +19,7 @@ videosRouter.get("/", async (request, response) => {
 });
 
 videosRouter.get("/search", async (request, response) => {
-  console.log("Searching...");
+  // console.log("Searching...");
 
   // extracting search query
   const q = request.query.q;
@@ -39,7 +39,7 @@ videosRouter.get("/search", async (request, response) => {
 });
 
 videosRouter.post("/all", async (request, response) => {
-  console.log("Posting All....");
+  // console.log("Posting All....");
 
   // extracting aray of videos that has to store in the database
   const videos = request.body.videos;
