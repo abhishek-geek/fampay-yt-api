@@ -1,8 +1,15 @@
+/*
+ * This is the express app that handle all the routes
+ */
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const { MONGODB_URI, PORT } = require("./utils/config");
 const cors = require("cors");
+const { MONGODB_URI, PORT } = require("./utils/config");
+const videosRouter = require("./routes/videos");
+
+// connecting to the MongoDB server
 
 mongoose.connect(
   MONGODB_URI,
@@ -17,5 +24,19 @@ mongoose.connect(
   }
 );
 
+// calling cors middleware so that cross origin requesr can be fetched without error
+
 app.use(cors());
+
+// parsing the json data in the request to JavaScript object
+
+app.use(express.json());
+
+/*
+Routing to the video route where the functionality of searching videos, 
+saving all videos and get is defined
+*/
+
+app.use("/api/videos", videosRouter);
+
 module.exports = app;
